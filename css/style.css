@@ -1,0 +1,141 @@
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body { margin: 0; }
+
+    p {
+      font-family: 'Josefin Sans';
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .home-left{
+      padding: 30px 260px;
+      background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    }
+
+    .home-left .home-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .home-left .home-content #home-title{
+      font-size: 84px;
+      margin-top: 100px;
+    }
+
+    .home-left .home-content #home-title span{
+      font-weight: 200;
+      color: hsl(0, 36%, 70%);
+    }
+
+    .home-left .home-content #home-description{
+      line-height: 25px;
+      margin-top: 25px;
+      color: hsl(0, 36%, 70%);
+    }
+
+    .home-left .home-content #home-input{
+      width: 100%;
+      margin-top: 25px;
+      border-radius: 16px;
+      border: 1px solid hsl(0, 36%, 70%);
+      border-radius: 30px;
+    }
+
+    .home-left .home-content #home-input input{
+      width: 74%;
+      padding-left: 20px;
+      border: none;
+      border-radius: 30px 0 0 30px;
+      background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    }
+
+    .home-left .home-content #home-input input::placeholder{
+      color: hsl(0, 36%, 70%);
+      font-weight: 500;
+    }
+
+    .home-left .home-content #home-input input:focus{
+      outline: none;
+    }
+
+    .home-left .home-content #home-input button{
+      width: 20%;
+      height: 55px;
+      margin: 0;
+      border: none;
+      background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+      border-radius: 30px;
+      color: white;
+    }
+
+    .home-left .home-content #home-input button p{
+      font-size: 30px;
+      margin: 0;
+    }
+
+    .home-right img#lady-img{
+      height: 100vh;
+    }
+
+    .home-right .mobile-logo-container{
+      display: none;
+    }
+
+    @media screen and (max-width: 426px) {
+      .container{
+        flex-direction: column-reverse;
+      }
+
+      .home-left{
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .home-right .mobile-logo-container{
+        display: block;
+        padding: 24px 24px;
+      }
+
+      .home-right img#lady-img{
+        width: 100%;
+        height: 86vh;
+        object-position: top;
+        object-fit: cover;
+      }
+
+      .home-left img{
+        display: none;
+      }
+
+      .home-left .home-content{
+        text-align: center;
+      }
+
+      .home-left .home-content #home-title{
+        margin: 0;
+        font-size: 56px;
+      }
+
+      .home-left .home-content #home-description{
+        padding: 0 36px;
+      }
+
+      .home-left .home-content #home-input{
+        width: 80%;
+      }
+
+      .home-left .home-content #home-input input{
+        width: 72%;
+      }
+    }
